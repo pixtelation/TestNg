@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Login {
-    WebDriver driver;
+   private WebDriver driver;
 
     public Login(WebDriver driver) {
         this.driver = driver;
@@ -19,9 +19,19 @@ public class Login {
     @FindBy(name = "btnK")
     WebElement searchButton;
 
+    @FindBy(xpath = "//a[@aria-label='Gmail ']")
+    WebElement Gmail;
+
     public void searchWord(String word) throws InterruptedException {
         searchBox.sendKeys(word);
         Thread.sleep(2000); // Let the suggestions load
         searchButton.submit();
     }
+
+    public void GmailIcon()
+    {
+        Gmail.click();
+    }
+
+
 }

@@ -1,4 +1,3 @@
-
 import Base.base;
 import Pages.Login;
 import org.testng.annotations.Parameters;
@@ -6,14 +5,25 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 
-public class LoginTest {
+public class LoginTest extends base {
     @Parameters({"platform", "browser", "nodeURL"})
     @Test
     public void googleSearch(String platform, String browser, String nodeURL) throws MalformedURLException, InterruptedException {
-        base l = new base();
-        l.setup(platform, browser, nodeURL);
+        setup(platform, browser, nodeURL);
 
-        Login lg = new Login(base.driver);
+        Login lg = new Login(driver);
         lg.searchWord("TestNG Grid");
     }
+
+    @Parameters({"platform", "browser", "nodeURL"})
+    @Test
+    public void clickOnGmail(String platform, String browser, String nodeURL) throws Exception
+    {
+        setup(platform, browser, nodeURL);
+
+        Login lg = new Login(driver);
+        lg.GmailIcon();
+
+    }
+   
 }
