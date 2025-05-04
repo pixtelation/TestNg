@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserStackSuite" parallel="tests" thread-count="2">
+    
+    <test name="Chrome-Windows">
+        <parameter name="os" value="Windows" />
+        <parameter name="browser" value="Chrome" />
+        <parameter name="version" value="latest" />
+        <classes>
+            <class name="LoginTest" />
+        </classes>
+    </test>
+
+    <test name="Safari-macOS">
+        <parameter name="os" value="OS X" />
+        <parameter name="browser" value="Safari" />
+        <parameter name="version" value="latest" />
+        <classes>
+            <class name="LoginTest" />
+        </classes>
+    </test>
+
+</suite>

@@ -2,10 +2,7 @@ package Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -26,11 +23,11 @@ public class base {
     }
 
     // @AfterSuite
-    // public void tearDown() {
-    //     if (driver != null) {
-    //         driver.quit();
-    //     }
-    // }
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
 }
 

@@ -4,23 +4,23 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.test</groupId>
-  <artifactId>demo</artifactId>
+  <groupId>com.browserstackgrid</groupId>
+  <artifactId>browserstackgrid</artifactId>
   <version>1.4</version>
 
-  <name>demo</name>
-  <!-- FIXME change it to the project's website -->
+  <name>browserstackgrid</name>
+  
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>22</maven.compiler.source>
-    <maven.compiler.target>22</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
   </properties>
 
   <dependencies>
 
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -91,4 +91,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>
