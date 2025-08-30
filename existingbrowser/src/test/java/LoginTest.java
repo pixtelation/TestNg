@@ -1,13 +1,15 @@
 import org.testng.annotations.Test;
 import Base.Launch;
-import Pages.Login;
+import Page.Login;
+
 
 public class LoginTest extends Launch {
-    Login lg = new Login(driver);
+    
 
     @Test
     public void SearchWord()
     {
+        Login lg = new Login(driver);
        
         lg.searchword("Gemini");
         // lg.clickforword();

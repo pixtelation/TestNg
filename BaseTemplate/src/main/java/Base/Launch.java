@@ -12,7 +12,7 @@ public class Launch {
     protected WebDriver driver ;
 
 
-@BeforeMethod
+@BeforeClass
     public void setup()
     {
         WebDriverManager.chromedriver().setup();
@@ -20,6 +20,14 @@ public class Launch {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.google.com/");
+    }
+
+@AfterClass
+    public void teardown()
+    {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
 
