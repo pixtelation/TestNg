@@ -13,7 +13,7 @@ import org.testng.annotations.*;
 
 
 public class base {
-    protected WebDriver driver;
+    public WebDriver driver;
 
     public void setup(String os, String browser, String version) throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();

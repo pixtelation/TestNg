@@ -8,6 +8,7 @@ public class LoginTest extends Launch {
     @Test
     public void SearchWord()
     {
+       
         Login lg = new Login(driver);
        
         lg.searchword("Gemini");

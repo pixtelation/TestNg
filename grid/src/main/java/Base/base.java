@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class base {
-    protected WebDriver driver;
+    public WebDriver driver;
 
     // @BeforeSuite
     public void setup(String platform, String browser, String nodeURL) throws MalformedURLException {

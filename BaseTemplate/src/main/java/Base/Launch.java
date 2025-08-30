@@ -9,7 +9,7 @@ import org.testng.annotations.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Launch {
-    protected WebDriver driver ;
+    public WebDriver driver ;
 
 
 @BeforeClass
@@ -22,13 +22,13 @@ public class Launch {
         driver.get("https://www.google.com/");
     }
 
-@AfterClass
-    public void teardown()
-    {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+// @AfterClass
+//     public void teardown()
+//     {
+//         if (driver != null) {
+//             driver.quit();
+//         }
+//     }
 
 
     

@@ -4,7 +4,7 @@ import Page.Login;
 
 
 public class LoginTest extends Launch {
-    
+   
 
     @Test
     public void SearchWord()
